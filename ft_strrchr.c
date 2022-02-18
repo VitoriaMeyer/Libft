@@ -6,7 +6,7 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:22:02 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/03 15:48:24 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/18 07:00:11 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	l;
+	int		l;
 	char	ci;
 
 	ci = c;

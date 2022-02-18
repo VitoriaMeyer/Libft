@@ -6,7 +6,7 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:22:21 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/11 03:33:44 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/18 06:59:56 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t h;
-	size_t n;
+	size_t	h;
+	size_t	n;
 
 	h = 0;
 	if (needle[0] == '\0')

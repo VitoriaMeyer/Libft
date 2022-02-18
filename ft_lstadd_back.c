@@ -6,7 +6,7 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 16:46:33 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 01:46:02 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/18 06:49:06 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*box;
 
-	if (*lst == NULL) 
+	if (*lst == NULL)
 	{
 		*lst = new;
 		return ;

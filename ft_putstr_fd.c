@@ -6,7 +6,7 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 19:59:40 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/07 20:20:01 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/18 06:57:08 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_putstr_fd(char *s, int fd)
 	if (s != NULL)
 	{
 		while (*s)
-		ft_putchar_fd(*s++, fd);
+			ft_putchar_fd(*s++, fd);
 	}
 }
