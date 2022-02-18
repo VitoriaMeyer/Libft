@@ -6,7 +6,7 @@
 #    By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/02 14:57:28 by vmeyer-s          #+#    #+#              #
-#    Updated: 2022/02/18 05:54:28 by vmeyer-s         ###   ########.fr        #
+#    Updated: 2022/02/18 10:55:21 by vmeyer-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,14 +49,15 @@ SRC = 	ft_memset 		\
 		ft_split		\
 
 
-BONUS = ft_lstnew \
-		ft_lstadd_front\
-		ft_lstsize\
-		ft_lstlast\
-		ft_lstadd_back\
-		ft_lstdelone\
-		ft_lstclear\
-		ft_lstiter
+BONUS = ft_lstnew 		\
+		ft_lstadd_front	\
+		ft_lstsize		\
+		ft_lstlast		\
+		ft_lstadd_back	\
+		ft_lstdelone	\
+		ft_lstclear		\
+		ft_lstiter		\
+		ft_lstmap		\
 
 CC =gcc
 RM =rm -f
