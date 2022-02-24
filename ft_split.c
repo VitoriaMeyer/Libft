@@ -6,84 +6,56 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:02:14 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 06:57:20 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/23 17:50:00 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
-#include <stdlib.h>
 
-static int	count_to_be_strings(const char *s1, char c);
-static char	*put_string(const char *s1, int start, int finish);
-static void	create_splitted(const char *s1, char c, char **splitted);
-
-char	**ft_split(char const *s1, char c)
-{
-	char	**splitted;
-
-	if (s1 == NULL)
-		return (NULL);
-	splitted = malloc(sizeof(char *) * ((count_to_be_strings(s1, c)) + 1));
-	if (splitted == NULL)
-		return (NULL);
-	create_splitted(s1, c, splitted);
-	return (splitted);
-}
-
-static int	count_to_be_strings(const char	*s1, char c)
+static int	counter(char const *s, char c)
 {
 	int	i;
-	int	control;
+	int	counter;
 
 	i = 0;
-	control = 0;
-	while (*s1)
+	counter = 0;
+	while (s[i] != '\0')
 	{
-		if (*s1 != c && control == 0)
-		{
-			control = 1;
+		while (s[i] == c)
 			i++;
-		}
-		else if (*s1 == c)
-			control = 0;
-		s1++;
+		if (s[i] != '\0')
+			counter++;
+		while (s[i] != '\0' && s[i] != c)
+			i++;
 	}
-	return (i);
+	return (counter);
 }
 
-static char	*put_string(const char *s1, int start, int finish)
+char	**ft_split(char const *s, char c)
 {
+	char	**new;
 	char	*str;
-	int		i;
+	size_t	ct;
 
-	i = 0;
-	str = malloc(sizeof(char) * (finish - start) + 1);
-	while (start < finish)
-		str[i++] = s1[start++];
-	str[i] = 0;
-	return (str);
-}
-
-static void	create_splitted(const char *s1, char c, char **splitted)
-{
-	size_t	i;
-	int		j;
-	int		control;
-
-	i = 0;
-	j = 0;
-	control = -1;
-	while (i <= ft_strlen(s1))
+	if (s == NULL)
+		return (NULL);
+	ct = counter(s, c);
+	new = (char **)malloc(sizeof(char *) * (ct + 1));
+	if (new == NULL)
+		return (NULL);
+	str = (char *)s;
+	while (*s)
 	{
-		if (s1[i] != c && control < 0)
-			control = i;
-		else if ((s1[i] == c || i == ft_strlen(s1)) && control >= 0)
+		if (*s == c)
 		{
-			splitted[j++] = put_string(s1, control, i);
-			control = -1;
+			if (str != s)
+				*(new ++) = ft_substr(str, 0, s - str);
+			str = (char *)s + 1;
 		}
-		i++;
+		s++;
 	}
-	splitted[j] = 0;
+	if (str != s)
+		*(new ++) = ft_substr(str, 0, s - str);
+	*new = 0;
+	return (new - ct);
 }

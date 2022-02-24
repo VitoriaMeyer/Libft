@@ -6,11 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 17:25:22 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 06:46:12 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 12:31:38 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* bzero writes NULL in (n) bytes (like an eraser) */
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,11 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:57:58 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 07:01:42 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 16:05:01 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* tolower converts a uppercase letter to lowercase*/
 
 int	ft_tolower(int c)
 {

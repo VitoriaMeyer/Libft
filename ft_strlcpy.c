@@ -6,11 +6,14 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:22:06 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/01 16:38:53 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 15:40:21 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* strlcpy copies (dstsize -1) characters from (src) to (dst) */
+/* returns the length of the string that would have been copied */
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

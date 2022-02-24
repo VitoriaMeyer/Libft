@@ -6,11 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:58:27 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 06:47:55 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 11:59:04 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* isdigit tests -TRUE(1)- if (c) is a number*/
 
 int	ft_isdigit(int c)
 {

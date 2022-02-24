@@ -6,12 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 15:40:10 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/03 15:43:06 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 17:18:30 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
+/* atoi converts (str) to -int- */
 
 int	ft_atoi(const char *str)
 {
@@ -41,17 +42,3 @@ int	ft_atoi(const char *str)
 	}
 	return (c * s);
 }
-/*
-int	main(void)
-{
-	char	*frase;
-
-	frase = "      -400s12";
-	printf("Original = %d\n", atoi(frase));
-	printf("Fake = %d\n", ft_atoi(frase));
-}
-
- 	espaco infinito
-	so 1 sinal
-	so numeros
-*/

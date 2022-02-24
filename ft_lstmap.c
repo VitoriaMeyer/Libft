@@ -6,7 +6,7 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 10:26:13 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 10:51:23 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/23 17:49:57 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 	t_list	*box;
 	t_list	*mem;
 
+	box = NULL;
 	if(!lst)
 		return (0);
 	while (lst)

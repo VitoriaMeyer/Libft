@@ -6,11 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:58:32 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 06:47:42 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 12:05:25 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* isascii tests -TRUE(1)- if (c) is a ASCII character */
 
 int	ft_isascii(int c)
 {

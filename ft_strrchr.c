@@ -6,13 +6,14 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:22:02 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 07:00:11 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 16:32:10 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
+
+/* strrchr search for the last occourence of c */
+/* returns a pointer to the located character */
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -27,15 +28,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + l);
 	return (0);
 }
-
-/*
-int main(void)
-{
-    char str1[] = "hello";
-    char c = 'l';
-
-    printf("The output is at: %p\n", ft_strrchr(str1, c));
-    printf("The output is at: %p\n", strrchr(str1, c));
-
-}
-*/

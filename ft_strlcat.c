@@ -6,11 +6,14 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:22:18 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/01 17:35:30 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/24 16:02:05 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* strlcat appends the (src) to the end of (dst) */
+/* returns the initial len of (dst) + len of (src) */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
