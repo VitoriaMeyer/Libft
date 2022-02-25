@@ -6,11 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 20:17:40 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/14 16:05:16 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/25 16:18:45 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* outputs a number(n) to the given file descriptor */
 
 void	ft_putnbr_fd(int n, int fd)
 {

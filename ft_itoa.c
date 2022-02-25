@@ -6,11 +6,13 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 16:16:11 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/18 06:48:38 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/25 15:46:55 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* itoa allocates memory and converts int to -str- */
 
 int	ft_len(int n)
 {

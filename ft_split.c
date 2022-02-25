@@ -6,11 +6,15 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:02:14 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/23 17:50:00 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/25 15:42:34 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* split allocates memory */
+/* takes a string and separate using (c) */
+/* all the separated parts turn into strings inside an array */
 
 static int	counter(char const *s, char c)
 {

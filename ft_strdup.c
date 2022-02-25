@@ -6,11 +6,14 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 03:39:41 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/11 03:44:03 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/25 10:39:36 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* strdup allocates memory and creates a copy of (s1) in the (dst) */
+/* returns a pointer to it */
 
 char	*ft_strdup(const char *s1)
 {

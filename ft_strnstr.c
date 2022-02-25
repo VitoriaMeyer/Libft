@@ -6,11 +6,17 @@
 /*   By: vmeyer-s <vmeyer-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 18:22:21 by vmeyer-s          #+#    #+#             */
-/*   Updated: 2022/02/24 17:21:25 by vmeyer-s         ###   ########.fr       */
+/*   Updated: 2022/02/25 10:01:17 by vmeyer-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* strnstr search for the first occurrence of the str(needle) */
+/* inside the str(haystack) where not more than (len) char are searched */
+/* if (needle) is an empty string (haystack) is returned */
+/* if (needle) occurs nowhere in (haystack), NULL is returned */
+/* else a pointer to the first character of (needle) is returned */
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
