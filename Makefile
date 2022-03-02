@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME = libft.a
-SRC = 	ft_memset 		\
+SRC = 		ft_memset 		\
 		ft_bzero		\
 		ft_memcpy		\
 		ft_memmove		\
@@ -33,10 +33,10 @@ SRC = 	ft_memset 		\
 		ft_strncmp		\
 		ft_memchr		\
 		ft_memcmp		\
-		ft_putchar_fd	\
-		ft_putstr_fd	\
-		ft_putendl_fd	\
-		ft_putnbr_fd	\
+		ft_putchar_fd		\
+		ft_putstr_fd		\
+		ft_putendl_fd		\
+		ft_putnbr_fd		\
 		ft_strnstr		\
 		ft_calloc 		\
 		ft_strdup		\
@@ -49,12 +49,12 @@ SRC = 	ft_memset 		\
 		ft_split		\
 
 
-BONUS = ft_lstnew 		\
-		ft_lstadd_front	\
+BONUS = 	ft_lstnew 		\
+		ft_lstadd_front		\
 		ft_lstsize		\
 		ft_lstlast		\
-		ft_lstadd_back	\
-		ft_lstdelone	\
+		ft_lstadd_back		\
+		ft_lstdelone		\
 		ft_lstclear		\
 		ft_lstiter		\
 		ft_lstmap		\
